@@ -8,7 +8,8 @@
     "url": "https://github.com/amarreo"
   },
   "icons": {
-    "128": "/style/icons/shopping_big.png"
+    "60": "/style/icons/shopping60.png"
+    "32": "/style/icons/shopping32.png"
   },
   "permissions": {
   }
