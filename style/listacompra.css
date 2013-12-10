@@ -1,0 +1,213 @@
+html, body {
+  margin: 0;
+  padding: 0;
+  font-size: 10px;
+  background-color: #fff;
+  width: 100%;
+  height: 100%;
+  overflow-x: hidden;
+}
+
+li[data-template], div[data-template] {
+  display: none;
+}
+
+
+#list {
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+}
+
+#detail {
+  top: 0;
+  left: 100%;
+  position: absolute;
+  z-index: 100;
+  width: 100%;
+  height: 100%;
+}
+
+#list aside {
+	position: absolute;
+	top: 10px;
+	right: 0;
+	height: 20px;
+	width: 30px;
+}
+
+#detail > section {
+  width: 100%;
+  height: 100%;
+  background: white;
+}
+
+.right-to-left {
+  transform: translateX(-100%);
+  transition: transform 0.5s ease-in;
+}
+
+.back-to-right {
+  transform: translateX(100%);
+  transition: transform 0.5s ease-in;
+}
+
+#container {
+    text-align: left;
+    margin: 0 auto;
+}
+#header {
+    color: white;
+    padding: 1%;
+    text-align: center;
+}
+#topbar {
+    position: absolute;
+    top: 0;
+    right: 5px;
+    text-align: center;
+    font-size: 120%;
+    height: 40px;
+    width: 80px;
+}
+#topbar > div {
+    float: left;
+    padding-top: 5px;
+}
+#list_header {
+    font-weight: bold;
+    font-size: 110%;
+}
+
+.removed {
+    display: none !important;
+}
+
+#add-item, #clear-list {
+    width: 40px;
+    height: 40px;
+    background: url('icons/add_icon.png') no-repeat scroll 0 5px transparent;
+    line-height: 40px;
+    cursor: pointer;
+}
+
+#clear-list {
+    background: url('icons/clear_icon.png') no-repeat scroll 0 5px transparent;
+}
+
+.logo {
+    position: absolute;
+    left: 0;
+    top: 5px;
+}
+
+.remove, #save {
+    float: right;
+    background: url('icons/delete_icon.png') no-repeat scroll 0 1px transparent;
+    border: none;
+    cursor: pointer;
+    line-height: 20px;
+    height: 20px;
+    width: 20px;
+}
+
+#save {
+    background: url('icons/save_icon.png') no-repeat scroll 0 1px transparent;
+}
+
+.new-name {
+    width: 150px;
+}
+.new-quantity {
+    width: 80px;
+}
+
+.hidden {
+    display: none !important;
+}
+[data-type="list"] {
+    padding: 0;
+}
+[data-type="list"] li {
+    height: auto;
+    border-bottom: none;
+    padding: 0 10px;
+}
+[data-type="list"] li:nth-child(odd) {
+    background: #F0FFFF;
+}
+[data-type="list"] li p {
+    line-height: 22px !important;
+    height: 22px;
+    padding: 5px 0 !important;
+}
+[data-type="list"] li.crossed {
+    opacity: 0.5;
+}
+[data-type="list"] li.crossed p {
+    color: #AAAAAA;
+    text-decoration: line-through;
+}
+
+#shop-items li div {
+    float: left;
+    padding: 5px 5px 5px 0;
+    height: 40px;
+}
+#shop-items aside div {
+    padding-right: 0;
+    float: right;
+}
+
+input[type="text"] {
+    font-size: 1.8rem;
+}
+input[type="text"]:focus {
+    border-color: rgba(82, 168, 236, 0.8);
+    box-shadow: 0 1px 1px rgba(0, 0, 0, 0.075) inset, 0 0 8px rgba(82, 168, 236, 0.6);
+    outline: 0 none;
+    margin-top: -2px;
+}
+
+section[role="region"] > header div {
+    float: left;
+}
+section[role="region"] > header button {
+    margin: 0 !important;
+}
+
+#editItem label {
+    clear: both;
+    float: left;
+    font-size: 1.5rem;
+    line-height: 2.1rem;
+    color: #666666;
+    margin: 0 10px;
+    padding: 0.3rem 0;
+    width: 90px;
+}
+
+#editItem input {
+    width: 180px;
+    cursor: pointer;
+    float: left;
+}
+#editItem input:not(:focus) {
+    border: none;
+    box-shadow: none;
+    background: none;
+}
+
+.fondo {
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    opacity: 0.15;
+    background: url('icons/shopping_big.png') no-repeat scroll center center transparent;
+    z-index: 10;
+    pointer-events: none;
+}

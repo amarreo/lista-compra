@@ -1,0 +1,15 @@
+{
+  "name": "ListaDeLaCompra",
+  "type": "privileged",
+  "description": "Lista de la compra",
+  "launch_path": "/index.html",
+  "developer": {
+    "name": "amarreo",
+    "url": "https://github.com/amarreo"
+  },
+  "icons": {
+    "128": "/style/icons/shopping_big.png"
+  },
+  "permissions": {
+  }
+}

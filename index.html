@@ -1,0 +1,77 @@
+<!DOCTYPE html>
+
+<html>
+  <head>
+    <meta charset="UTF-8">
+    <link rel="stylesheet" href="shared/style/headers.css">
+    <link rel="stylesheet" href="shared/style_unstable/lists.css">
+    <link rel="stylesheet" href="style/listacompra.css">
+    <script defer src="js/utils/templates.js"></script>
+    <script defer src="js/jquery-2.0.3.min.js"></script>
+    <script defer src="js/jquery.mobile-1.3.2.min.js"></script>
+    <script defer src="js/listacompra.js"></script>
+    <script defer src="js/listacompra_init.js"></script>
+  </head>
+
+  <body role="application">
+    <section id="list">
+      <section role="region">
+         <header>
+          <h1>&nbsp;&nbsp;Mi lista</h1>
+             <div class="logo">
+                 <img width="40" height="40" src="/style/icons/shopping.png" alt="Shopping List Logo"/>
+             </div>
+            <div id="topbar">
+                 <div id="add-item" title="Add item"></div>
+                 <div id="clear-list" title="Clear list"></div>
+            </div>
+        </header>
+      </section>
+
+      <section data-type="list">
+        <form class="addItemForm hidden">
+          <ul id="shop-items">
+            <li>
+                <div><input type="text" class="new-name" placeholder="Producto"/></div>
+                <div><input type="text" class="new-quantity" placeholder="cantidad"/></div>
+                <aside><input type="button" id="save"/></aside>
+            </li>
+          </ul>
+        </form>
+        <ul id="buying-list">
+            <li data-template data-id="#id#" class="listElement #status#">
+                <p>#product# <span class="quantity">#quantity#</span></p>
+                <aside><input type="button" class="remove"/></aside>
+            </li>
+        </ul>
+      </section>
+    </section>
+
+    <section id="detail">
+      <section role="region">
+         <header>
+          <button class="icon icon-back"></button>
+          <h1 class="detailsHeader">Detalle</h1>
+         </header>
+            <form id="editItem">
+                <label for="product">Producto: </label>
+                <input type="text" id="product" />
+                <label for="brand">Marca: </label>
+                <input type="text" id="brand" />
+                <label for="quantity">Cantidad: </label>
+                <input type="text" id="quantity" />
+                <label for="market">Comercio: </label>
+                <input type="text" id="market" />
+                <label for="price">Precio aprox: </label>
+                <input type="text" id="price" />
+                <label for="promotion">Promoción: </label>
+                <input type="text" id="promotion" />
+                <input type="hidden" id="id" />
+                <input type="hidden" id="status" />
+            </form>
+        </section>
+    </section>
+
+    <div class="fondo">&nbsp;</div>
+  </body>
+</html>
