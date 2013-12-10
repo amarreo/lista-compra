@@ -1,5 +1,5 @@
 {
-  "name": "ListaDeLaCompra",
+  "name": "ListaCompra",
   "type": "privileged",
   "description": "Lista de la compra",
   "launch_path": "/index.html",
@@ -10,7 +10,5 @@
   "icons": {
     "60": "/style/icons/shopping60.png"
     "32": "/style/icons/shopping32.png"
-  },
-  "permissions": {
   }
 }
